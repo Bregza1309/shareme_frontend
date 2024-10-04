@@ -143,13 +143,11 @@ const PinDetail = () => {
         </div>
       </div>
       {console.log(pins)}
-      {pins.length > 0 ? (
+      {pins.length > 0 && (
         <>
           <h2 className="text-center font-bold text-2xl mt-8 mb-4">More Like This</h2>
           <MasonryLayout pins={pins} />
         </>
-      ) : (
-        <Spinner message="Loading more pins ..." />
       )}
     </>
   );
